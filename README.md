@@ -43,10 +43,16 @@ Additionally:
 
 ---
 
-## 🚀 Postman Monitors
+## 🚀 Postman Collection Runner
+I executed the tests directly in **Postman Collection Runner** to manually verify all requests.
+Screenshot of the runner results is in:
+- [`reports/collection-runner-results.png`](reports/collection-runner-results.png)
+
+---
+
+## 🧪 Postman Monitors
 I configured a **Monitor w Postman** that runs the collection every 2 hours.  
 This allows tracking the API health on a recurring schedule.
-
 Chart from Postman Monitors is in:
 - [`reports/postman-monitors-summary.png`](reports/postman-monitors-summary.png)
 
