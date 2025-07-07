@@ -60,7 +60,7 @@ Install Newman globally:
 npm install -g newman
 ```
 
-Install Newman Reporter HTML globally as an Administrator:
+Install Newman Reporter HTML globally:
 ```bash
 npm install -g newman-reporter-html
 ```
