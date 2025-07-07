@@ -21,10 +21,10 @@ This guide shows how to configure a **Jenkins freestyle job** to run Postman API
 
 ---
 
-### 2️⃣ Configure source code (optional, if using Git)
+### 2️⃣ Configure source code
 - In **Source Code Management**, select **Git**.
-- Enter your repository URL and credentials (if private).
-- Choose branch (e.g. `main`).
+- Enter repository URL `https://github.com/lukasz-ujma/jsonplaceholder-api-tests.git`
+- Choose branch `main`.
 
 ---
 
