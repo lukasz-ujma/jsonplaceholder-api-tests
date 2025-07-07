@@ -87,7 +87,7 @@ Detailed freestyle job instructions are in:
 ---
 
 ## 🗂️ Repository structure
-
+```
 jsonplaceholder-api-tests/
 ├── README.md
 ├── collections/
@@ -98,7 +98,7 @@ jsonplaceholder-api-tests/
 │   └── postman-monitors-summary.png
 ├── jenkins/
 │   └── freestyle-job-instructions.md
-
+```
 
 ---
 
