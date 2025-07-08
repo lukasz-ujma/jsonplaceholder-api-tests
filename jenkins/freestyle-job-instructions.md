@@ -28,21 +28,26 @@ This guide shows how to configure a **Jenkins freestyle job** to run Postman API
 
 ---
 
-### 3️⃣ Add build step
+### 3️⃣ Provide Node & npm to PATH
+- In the Build Environment section, check Provide Node & npm bin/ folder to PATH.
+- From the dropdown, select the NodeJS installation you previously configured in Jenkins (e.g. Node 18).
+
+---
+
+### 4️⃣ Add build step
 - In **Build**, click **Add build step** → **Execute shell** (or **Execute Windows batch command** if on Windows).
 
 Paste the Newman command, e.g.:
 
 ```bash
-newman run collections/JSONPlaceholderTests.postman_collection.json \
-    -e collections/JSONPlaceholderEnv.postman_environment.json \
-    -r cli,html \
-    --reporter-html-export reports/newman-report.html
+npm install -g newman
+npm install -g newman-reporter-html
+newman run collections/JSONPlaceholderTests.postman_collection.json -e collections/JSONPlaceholderEnv.postman_environment.json -r cli,html --reporter-html-export reports/newman-report.html
 ```
 
 ---
 
-### 4️⃣ Archive artifacts (HTML report)
+### 5️⃣ Archive artifacts (HTML report)
 To make the HTML report downloadable from Jenkins:
 
 - In **Post-build Actions**, click **Add post-build action** → **Archive the artifacts**.
