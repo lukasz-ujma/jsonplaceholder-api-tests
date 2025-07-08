@@ -37,7 +37,7 @@ This guide shows how to configure a **Jenkins freestyle job** to run Postman API
 ### 4️⃣ Add build step
 - In **Build**, click **Add build step** → **Execute shell** (or **Execute Windows batch command** if on Windows).
 
-Paste the Newman command, e.g.:
+Paste the Newman command:
 
 ```bash
 npm install -g newman
