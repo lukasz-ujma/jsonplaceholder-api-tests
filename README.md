@@ -100,6 +100,7 @@ jsonplaceholder-api-tests/
 │   ├── JSONPlaceholderTests.postman_collection.json
 │   └── JSONPlaceholderEnv.postman_environment.json
 ├── reports/
+│   └── collection-runner-results.png
 │   └── newman-report.html
 │   └── postman-monitors-summary.png
 ├── jenkins/
